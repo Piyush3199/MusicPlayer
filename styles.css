@@ -9,7 +9,9 @@
 body{
     background-color: hsl(310, 53%, 10%);
     /* background-color: antiquewhite; */
-    color:#f1f1f1
+    color:#f1f1f1;
+    padding: 10px;
+    
 
 }
 img{
@@ -29,6 +31,8 @@ img{
 
 main{
     width: 70vw;
+    /* margin: 0 auto; */
+    
 }
 
 .carousel-container{
@@ -53,7 +57,7 @@ main{
     padding: 10px;
 
 }
-
+/* Latest Release */
 .LrCard{
      height: 80px;
     /* width: 40%; */
@@ -105,4 +109,124 @@ main{
 }
 .dropdown-content a:hover{
     background-color: #f1f1f1;
+}
+
+/*
+    Popular artists
+
+/* .popular-artists{
+    /* position: relative; 
+    margin-left: -280px;
+
+}
+.artists{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    gap: 10px;
+    padding: 10px;
+}
+
+.artists > img{
+    border-radius: 50%;
+}
+
+.artists > img:hover {
+    opacity: 0.5;
+}
+.stations{
+    margin: 20px 0;
+}
+.stations-card{
+    margin-top: 100px;
+    margin-left: -280px;
+    display: inline-block;
+    gap: 10px;
+    padding: 10px;
+} */
+
+.popular-artists {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+    scrollbar-width: none;
+    gap: 10px;
+    padding: 10px;
+}
+
+.artists > img {
+    border-radius: 50%;
+}
+
+.artists > img:hover {
+    opacity: 0.5;
+}
+
+/* Stations */
+.stations {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stations-card {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.stations-card > img {
+    height: 100px;
+    width: 100px;
+}
+.stations-card >img:hover{
+    opacity: 0.5;
+}
+
+/* genre */
+
+.genre{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.genre > img{
+    height: 30%;
+    width: 30%;
+}
+
+.latest-english,.latest-hindi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.latest-english >img, .latest-hindi>img{
+    height: 100px;
+    width: 100px;
+}
+
+/*
+Aside Section
+*/
+
+
+aside{
+    margin-left: 100%;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
