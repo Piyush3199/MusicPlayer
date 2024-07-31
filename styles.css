@@ -351,3 +351,61 @@ aside {
     padding: 5px;
     color: #f1f1f1;
 }
+
+footer {
+    position: sticky;
+    bottom: 0; /* Make sure the footer sticks to the bottom */
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: hsl(310, 53%, 12%);
+    padding: 10px 20px; /* Adding padding for better spacing */
+    z-index: 1000; /* Ensure the footer stays on top of other elements */
+    padding: 10px;
+}
+
+.footer-song-info {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Align items vertically */
+}
+
+.footer-song-info > img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.currently-playing {
+    width: 40%;
+    display: flex;
+    position: absolute;
+    right: 30%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.currently-playing-icons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.progress-bar {
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    gap: 10px;
+}
+
+.range-bar {
+    width: 100%; 
+    height: 5px; 
+    background-color: #ddd; 
+    border-radius: 5px; 
+    overflow: hidden; 
+}
+
+
