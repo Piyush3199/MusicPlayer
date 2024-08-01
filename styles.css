@@ -61,8 +61,6 @@ main{
     perspective: 1000px;
     margin-bottom: 20px;
     display: flex;
-    background: cyan ;
-    border: 2px solid black;
     overflow:scroll;
     scrollbar-width: none;
 }
@@ -249,11 +247,11 @@ main{
     padding: 10px;
 }
 
-.artists > img {
+.artists >.popular-artists-card  img {
     border-radius: 50%;
 }
 
-.artists > img:hover {
+.popular-artists-card > img:hover {
     opacity: 0.5;
 }
 
@@ -315,7 +313,10 @@ aside {
     box-sizing: border-box;
     overflow-y: auto;
 }
-
+.queue-div{
+    display: flex;
+    justify-content: space-between;
+}
 .song-queue {
     display: flex;
     flex-direction: column;
@@ -377,10 +378,10 @@ footer {
 }
 
 .currently-playing {
-    width: 40%;
+    width: 60%;
     display: flex;
-    position: absolute;
-    right: 30%;
+    position: relative;
+    margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
@@ -408,4 +409,77 @@ footer {
     overflow: hidden; 
 }
 
+.artist-container{
+    height: 100%;
+    width: 100%;
+    max-width: 800px;
+    max-height: 400px;
+    position: relative;
+    perspective: 1000px;
+    margin-bottom: 20px;
+    display: flex;
+    overflow:scroll;
+    scrollbar-width: none;
+    padding: 10px;
+}
 
+.artist-card{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.artist-image > img{
+    width: 300px;
+    height: 300px;
+    border-radius: 0 50% 50% 0;
+}
+
+.artist-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.similar-artist{
+    background-color: none;
+    z-index: 1000;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .footer-song-info > img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .currently-playing {
+        width: 80%;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    .LrCard {
+        flex: 1 1 100%;
+    }
+
+    .popular-artists, .stations, .genre, .latest-english, .latest-hindi {
+        align-items: stretch;
+    }
+}
